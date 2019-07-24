@@ -1,11 +1,10 @@
-$close-button-row-height: 39px;
 .EmbeddedVideo {
     position: fixed;
     bottom: 0px;
     right: 0px;
     
     width:300px; 
-    height:calc(169px+$close-button-row-height);
+    height:calc(169px+39px);
     border-style:solid;
     border-width: 1px;
 
@@ -16,7 +15,7 @@ $close-button-row-height: 39px;
     .closeRow {
         display: flex;
         justify-content: flex-end;
-        height: $close-button-row-height;
+        height: 39px;
     }
     .closeButtonOuter {
 
