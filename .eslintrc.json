@@ -1,0 +1,8 @@
+{
+    "extends": "react-app",
+    "rules": {
+        "indent": ["error", 4],
+        "space-before-function-paren": ["error", "always"],
+        "arrow-spacing": "error"
+    }
+}

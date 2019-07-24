@@ -1,0 +1,13 @@
+@import "../sass-variables.scss";
+
+.StickyHeader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.TopLayer {
+    main {
+        margin-top: $navbar-height;
+    }
+}
