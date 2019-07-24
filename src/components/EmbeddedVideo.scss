@@ -1,0 +1,37 @@
+$close-button-row-height: 39px;
+.EmbeddedVideo {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    
+    width:300px; 
+    height:calc(169px+$close-button-row-height);
+    border-style:solid;
+    border-width: 1px;
+
+    iframe {
+        height:169px;
+    }
+    background-color: white;
+    .closeRow {
+        display: flex;
+        justify-content: flex-end;
+        height: $close-button-row-height;
+    }
+    .closeButtonOuter {
+
+    }
+    .closeButton {
+        font-weight: bold;
+        font-size: 20pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        text-decoration: none;
+
+    }
+}
