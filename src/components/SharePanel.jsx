@@ -7,7 +7,7 @@ class SharePanel extends BaseComponent {
     render () {
         return (
             <div className = "SharePanel" data-testid="SharePanel">
-                <img className = "button twitterButton" alt="share on twitter" src = "/icons/twitter.png" />
+                <img className = "button twitterButton" alt="share on twitter" src = "/icons/twitter2.png" />
                 <img className = "button facebookButton" alt="share on facebook" src = "/icons/facebook.png" />
                 <img className = "button" alt="share on tumblr" src = "/icons/tumblr.png" />
             </div>

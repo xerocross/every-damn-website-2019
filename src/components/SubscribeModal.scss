@@ -1,0 +1,33 @@
+.SubscribeModal {
+    .overlay {
+        background: rgba(122, 121, 121, 0.6);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay.hide {
+        display: none;
+    }
+    .inner-message {
+        width: 500px;
+        height: auto;
+        padding: 2em 5em;
+        background: white;
+        border-style:solid;
+        border-color: darkgrey;
+        border-radius: 8px;
+        border-width: 1px;
+        box-shadow: 6px 6px 5px 6px rgba(102, 99, 99, 0.5);
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+    }
+}

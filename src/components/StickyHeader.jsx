@@ -8,7 +8,7 @@ class StickyHeader extends BaseComponent {
         return (
             <div className = "StickyHeader" data-testid="StickyHeader">
 
-                <a href="/">Every Damn Website</a>
+                <a href="/" className = "title">Every Damn Website</a>
                 <a href="/">About</a>
             </div>
         )
