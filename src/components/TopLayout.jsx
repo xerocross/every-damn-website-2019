@@ -7,6 +7,7 @@ import EmbeddedVideo from "./EmbeddedVideo.jsx";
 import SharePanel from "./SharePanel.jsx";
 import SubscribeModal from "./SubscribeModal.jsx";
 import QAHelper from "../qa-helper.js";
+import CookiePermission from "./CookiePermission.jsx";
 import "./TopLayout.scss";
 
 class TopLayout extends BaseComponent {
@@ -32,7 +33,7 @@ class TopLayout extends BaseComponent {
                     <h1>Every Damn Website 2019</h1>
                     <MainCopy />
                 </main>
-
+                <CookiePermission />
             </div>
         )
     }

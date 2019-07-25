@@ -1,0 +1,27 @@
+.CookiePermission {
+    z-index: 3;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    border-style:solid;
+    border-width: 1px;
+    border-color: darkgray;
+    box-shadow: 6px 6px 5px 6px rgba(102, 99, 99, 0.5);
+    &.hide {
+        display: none;
+    }
+    .buttons-bar {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
