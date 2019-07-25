@@ -22,7 +22,7 @@ class CookiePermission extends BaseComponent {
             <div className = {classVal} data-testid="CookiePermission">
                 <div className = "container">
                     <p>
-                        Europe wants us to remind you that this website&mdash;like every other website that exists&mdash;uses <strong>cookies</strong>.
+                        Europe wants us to remind you that this website&mdash;like every other website that exists&mdash;uses <strong>cookies</strong>.  Do we have your permission to use cookies?
                     </p>
                     <div className = "buttons-bar">
                         <button 
