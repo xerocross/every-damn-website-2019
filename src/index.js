@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-Notification.requestPermission().then(function (result) {
-    console.log(result);
-});
+try {
+    if (Notification) {
+        Notification.requestPermission().then(function (result) {
+            console.log(result);
+        });
+    }
+} catch(e) {
+    // do nothing
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
