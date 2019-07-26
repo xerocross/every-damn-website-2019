@@ -20,15 +20,19 @@ class EmbeddedVideo extends BaseComponent {
         let src = EmbeddedVideoUrl.getURL(this.props.autoplay);
         return (
             <div className = {"EmbeddedVideo" + (!self.props.showEmbeddedVideo ? " hide " : "")} data-testid="EmbeddedVideo">
-                <div className = "closeRow">
-                    <div><button 
-                        className="closeButton"
-                        onClick = {e => self.close(e)}
-                    >
-                        &times;
-                    </button></div>
-                </div>
-                <iframe title = "some-vid" width="300" height="169" src={src} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                {self.props.showEmbeddedVideo && 
+                    <div>
+                        <div className = "closeRow">
+                            <div><button 
+                                className="closeButton"
+                                onClick = {e => self.close(e)}
+                            >
+                                &times;
+                            </button></div>
+                        </div>
+                        <iframe title = "some-vid" width="300" height="169" src={src} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                }
             </div>
         )
     }
