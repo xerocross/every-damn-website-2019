@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
 try {
+    // this is just to annoy users with a request to 
+    // push notifications if the API is available
     if (Notification) {
         Notification.requestPermission().then(function (result) {
-            console.log(result);
         });
     }
 } catch(e) {

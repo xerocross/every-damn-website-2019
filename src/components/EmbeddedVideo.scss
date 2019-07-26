@@ -5,13 +5,16 @@
     
     width:300px; 
     height:calc(169px+39px);
-    border-style:solid;
+    border-style:none;
     border-width: 1px;
 
+    &.hide {
+        display:none;
+    }
     iframe {
         height:169px;
     }
-    background-color: white;
+    background-color: transparent;
     .closeRow {
         display: flex;
         justify-content: flex-end;

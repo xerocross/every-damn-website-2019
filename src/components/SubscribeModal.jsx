@@ -13,16 +13,13 @@ class SubscribeModal extends BaseComponent {
     }
     componentDidMount () {
         let self = this;
-        setTimeout(() => {
-            self.setState({
-                show: true
-            });
-        }, 2000);
-        setTimeout(() => {
-            self.setState({
-                show: true
-            });
-        }, 15000);
+        if (this.props.askToSubscribe) {
+            setTimeout(() => {
+                self.setState({
+                    show: true
+                });
+            }, 2000);
+        }
     }
     hide (e) {
         e.preventDefault();
@@ -52,6 +49,7 @@ class SubscribeModal extends BaseComponent {
 }
 const mapStateToProps = (state, ownProps) => {
     return {
+        askToSubscribe : state.askToSubscribe
     }
 };
 const mapDispatchToProps = {
